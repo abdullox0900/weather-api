@@ -58,8 +58,21 @@ body {
      background-size: contain;
 }
 
+.weather__wrap {
+     display: flex;
+     position: relative;
+}
+
 .weather {
      margin-top: 20px;
+}
+
+.weather__img-cloudy {
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     width: 190px;
+     height: 190px;
 }
 
 .wearher__name {
