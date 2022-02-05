@@ -66,3 +66,38 @@ body {
      color: #fff;
      font-size: 40px;
 }
+
+.weather__country {
+     margin-bottom: 10px;
+     color: #fff;
+     font-size: 20px;
+}
+
+.weather__temper {
+     margin-bottom: 10px;
+     color: #fff;
+     font-size: 18px;
+     font-weight: 600;
+}
+
+.weather__speed {
+     position: relative;
+     margin-left: 23px;
+     color: #fff;
+}
+
+.weather__speed::before {
+     position: absolute;
+     top: 2px;
+     left: -23px;
+     content: "";
+     width: 20px;
+     height: 20px;
+     background: url("../img/sped.svg");
+     background-size: contain;
+}
+
+.weather__img {
+     width: 50px;
+     height: 50px;
+}
