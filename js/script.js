@@ -18,9 +18,6 @@ const getLocationData = function (location) {
           .then(res => res.json())
           .then(data => weatherAppRender(data));
 
-
-
-
      return apiRequest
 }
 
@@ -47,3 +44,15 @@ elForm.addEventListener("submit", function (e) {
 // weather: [{…}]
 // wind: {speed: 7.72, deg: 250}
 // [[Prototype]]: Object
+
+// OPTION &&&&&&
+// const weatherAppRender = function (arr) {
+//      const html = `
+//                <h2 class="wearher__name">${arr.name}</h2>
+//                <div class="weather__country">Country: ${arr.sys.country}</div>
+//                <div class="weather__temper">${arr.main.temp}°C</div>
+//                <div class="weather__speed">Speed: ${arr.wind.speed}</div>
+//      `
+//      elWrapper.innerHTML = null;
+//      elWrapper.insertAdjacentHTML("beforeend", html)
+// }
